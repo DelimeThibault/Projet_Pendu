@@ -48,9 +48,9 @@ function lettre_cachees(motEntier, lettreTrouvees){
 function jeu(){
     let joueur = nom_utilisateur();
     console.log("joueur " + joueur +":");
-    let motATrouver = mot_hasard();
 
     while (continuerPartie != "n"){
+        let motATrouver = mot_hasard();
         let lettreATrouver = [];
         for (let i = 0; i < motATrouver.length ; i++){
             if (!(lettreATrouver.includes(motATrouver[i]))){
